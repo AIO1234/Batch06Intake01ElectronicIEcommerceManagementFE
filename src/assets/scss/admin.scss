@@ -1,0 +1,50 @@
+.horizantal {
+  background-color: rgb(246, 243, 243);
+  min-height: 150vh;
+  .card {
+    width: 100%;
+  }
+  .role_text {
+    color: rgb(129, 126, 122);
+    font-size: 15px;
+  }
+}
+.horizantal_paddings {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.content {
+  margin-top: 5px;
+}
+.webview {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+  @media (min-width: 600px) and (max-width: 1024px) {
+    display: none;
+  }
+  @media screen and (min-width: 1366px) {
+    display: block;
+  }
+}
+.mobileview {
+  @media (min-width: 480px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+  }
+}
+.admin-table {
+  .v-data-table__td:last-child {
+    width: 200px;
+  }
+}
+
+.add-btn {
+  float: right;
+  margin: 0 0 24px;
+}
