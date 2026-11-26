@@ -2,6 +2,7 @@ import Booking from "./modules/booking&Reservation";
 import Customer from "./modules/customers";
 import Employee from "./modules/employee";
 import Home from "./modules/home";
+import Inventory from "./modules/inventory";
 import Payment from "./modules/payment";
 import Report from "./modules/report";
 import VehicleManagement from "./modules/vehicleManagement";
@@ -14,7 +15,19 @@ import { createRouter, createWebHistory } from "vue-router";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
 
-  routes: [...Booking, ...Customer, ...Employee, ...Home, ...Payment, ...Report, ...VehicleManagement, ...VehicleMaintenance, ...Users, ...WebSite],
+  routes: [
+    ...Booking,
+    ...Customer,
+    ...Employee,
+    ...Home,
+    ...Inventory,
+    ...Payment,
+    ...Report,
+    ...VehicleManagement,
+    ...VehicleMaintenance,
+    ...Users,
+    ...WebSite,
+  ],
 });
 
 export default router;
